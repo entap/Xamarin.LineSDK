@@ -95,7 +95,7 @@ echo "Generating binding api definition and structs"
 sharpie_bind \
 	iphoneos$IOS_SDK_VERSION \
 	"$OUTPUT_PATH/XamarinApiDef" \
-	$SWIFT_PROJECT_NAME \
+	$OBJC_NAME \
 	"$OUTPUT_PATH/$OBJC_NAME.xcframework/ios-arm64_armv7/$OBJC_NAME.framework/Headers/" \
 	"$OUTPUT_PATH/$OBJC_NAME.xcframework/ios-arm64_armv7/$OBJC_NAME.framework/Headers/$OBJC_NAME-Swift.h"
 
