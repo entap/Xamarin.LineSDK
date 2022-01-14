@@ -1280,7 +1280,10 @@ namespace LineSDKObjC
 	// @interface LineSDKObjC_Swift_836 (LineSDKGroup) <LineSDKShareTarget>
 	[Category]
 	[BaseType (typeof(LineSDKGroup))]
-	interface LineSDKGroup_LineSDKObjC_Swift_836 : ILineSDKShareTarget
+// Fixed
+// Error CS0246: The type or namespace name 'ILineSDKShareTarget' could not be found
+//	interface LineSDKGroup_LineSDKObjC_Swift_836 : ILineSDKShareTarget
+	interface LineSDKGroup_LineSDKObjC_Swift_836 : LineSDKShareTarget
 	{
 		// @property (readonly, copy, nonatomic) NSString * _Nonnull targetID;
 		[Export ("targetID")]
@@ -2626,7 +2629,10 @@ namespace LineSDKObjC
 	// @interface LineSDKObjC_Swift_1397 (LineSDKUser) <LineSDKShareTarget>
 	[Category]
 	[BaseType (typeof(LineSDKUser))]
-	interface LineSDKUser_LineSDKObjC_Swift_1397 : ILineSDKShareTarget
+// Fixed
+// Error CS0246: The type or namespace name 'ILineSDKShareTarget' could not be found
+//	interface LineSDKUser_LineSDKObjC_Swift_1397 : ILineSDKShareTarget
+	interface LineSDKUser_LineSDKObjC_Swift_1397 : LineSDKShareTarget
 	{
 		// @property (readonly, copy, nonatomic) NSString * _Nonnull targetID;
 		[Export ("targetID")]
