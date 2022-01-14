@@ -1256,7 +1256,10 @@ namespace LineSDKObjC
   protocol, then [Model] is redundant and will generate code that will never
   be used.
 */[Protocol (Name = "_TtP11LineSDKObjC18LineSDKShareTarget_")]
-	interface LineSDKShareTarget
+// Fixed
+// Error CS0246: The type or namespace name 'LineSDKShareTarget' could not be found
+	[BaseType(typeof(NSObject))]
+    interface LineSDKShareTarget
 	{
 		// @required @property (readonly, copy, nonatomic) NSString * _Nonnull targetID;
 		[Abstract]
