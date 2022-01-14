@@ -51,9 +51,17 @@
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
     </NativeReference>
+    <NativeReference Include="Frameworks\LineSDKObjC.xcframework\ios-arm64_armv7\LineSDKObjC.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>True</SmartLink>
+    </NativeReference>
    </ItemGroup>
    <ItemGroup Condition=" '$(Platform)' == 'iPhoneSimulator' ">
     <NativeReference Include="Frameworks\LineSDK.xcframework\ios-arm64_i386_x86_64-simulator\LineSDK.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>True</SmartLink>
+    </NativeReference>
+    <NativeReference Include="Frameworks\LineSDKObjC.xcframework\ios-arm64_i386_x86_64-simulator\LineSDKObjC.framework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
     </NativeReference>
