@@ -1281,7 +1281,9 @@ namespace LineSDKObjC
 	}
 
 	// @interface LineSDKObjC_Swift_836 (LineSDKGroup) <LineSDKShareTarget>
-	[Category]
+// Fixed
+// Error CS0714: [Type]: static classes cannot implement interfaces
+//	[Category]
 	[BaseType (typeof(LineSDKGroup))]
 // Fixed
 // Error CS0246: The type or namespace name 'ILineSDKShareTarget' could not be found
@@ -2639,7 +2641,9 @@ namespace LineSDKObjC
 	}
 
 	// @interface LineSDKObjC_Swift_1397 (LineSDKUser) <LineSDKShareTarget>
-	[Category]
+// Fixed
+// Error CS0714: [Type]: static classes cannot implement interfaces
+//	[Category]
 	[BaseType (typeof(LineSDKUser))]
 // Fixed
 // Error CS0246: The type or namespace name 'ILineSDKShareTarget' could not be found
