@@ -163,65 +163,81 @@ namespace LineSDKObjC
 	interface LineSDKAPI_LineSDKObjC_Swift_268
 	{
 		// +(void)refreshAccessTokenWithCompletionHandler:(void (^ _Nonnull)(LineSDKAccessToken * _Nullable, NSError * _Nullable))completion __attribute__((deprecated("
+/* [Fix]Error CS1003: Syntax error
         Auth-related APIs don't refresh access tokens automatically.
         Make sure you don't need token refreshing as a side effect, then use methods in `LineSDKAuthAPI` instead.
         ", "LineSDKAuthAPI.refreshAccessToken")));
+*/
 		[Static]
 		[Export ("refreshAccessTokenWithCompletionHandler:")]
 		void RefreshAccessTokenWithCompletionHandler (Action<LineSDKAccessToken, NSError> completion);
 
 		// +(void)refreshAccessTokenWithCallbackQueue:(LineSDKCallbackQueue * _Nonnull)queue completionHandler:(void (^ _Nonnull)(LineSDKAccessToken * _Nullable, NSError * _Nullable))completion __attribute__((deprecated("
+/* [Fix]Error CS1003: Syntax error
         Auth-related APIs don't refresh access tokens automatically.
         Make sure you don't need token refreshing as a side effect, then use methods in `LineSDKAuthAPI` instead.
         ", "LineSDKAuthAPI.refreshAccessToken")));
+*/
 		[Static]
 		[Export ("refreshAccessTokenWithCallbackQueue:completionHandler:")]
 		void RefreshAccessTokenWithCallbackQueue (LineSDKCallbackQueue queue, Action<LineSDKAccessToken, NSError> completion);
 
 		// +(void)revokeAccessTokenWithCompletionHandler:(void (^ _Nonnull)(NSError * _Nullable))completion __attribute__((deprecated("
+/* [Fix]Error CS1003: Syntax error
         Auth-related APIs don't refresh access tokens automatically.
         Make sure you don't need token refreshing as a side effect, then use methods in `LineSDKAuthAPI` instead.
         ", "LineSDKAuthAPI.revokeAccessToken")));
+*/
 		[Static]
 		[Export ("revokeAccessTokenWithCompletionHandler:")]
 		void RevokeAccessTokenWithCompletionHandler (Action<NSError> completion);
 
 		// +(void)revokeAccessToken:(NSString * _Nullable)token completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completion __attribute__((deprecated("
+/* [Fix]Error CS1003: Syntax error
         Auth-related APIs don't refresh access tokens automatically.
         Make sure you don't need token refreshing as a side effect, then use methods in `LineSDKAuthAPI` instead.
         ", "LineSDKAuthAPI.revokeAccessToken")));
+*/
 		[Static]
 		[Export ("revokeAccessToken:completionHandler:")]
 		void RevokeAccessToken ([NullAllowed] string token, Action<NSError> completion);
 
 		// +(void)revokeAccessToken:(NSString * _Nullable)token callbackQueue:(LineSDKCallbackQueue * _Nonnull)queue completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completion __attribute__((deprecated("
+/* [Fix]Error CS1003: Syntax error
         Auth-related APIs don't refresh access tokens automatically.
         Make sure you don't need token refreshing as a side effect, then use methods in `LineSDKAuthAPI` instead.
         ", "LineSDKAuthAPI.revokeAccessToken")));
+*/
 		[Static]
 		[Export ("revokeAccessToken:callbackQueue:completionHandler:")]
 		void RevokeAccessToken ([NullAllowed] string token, LineSDKCallbackQueue queue, Action<NSError> completion);
 
 		// +(void)verifyAccessTokenWithCompletionHandler:(void (^ _Nonnull)(LineSDKAccessTokenVerifyResult * _Nullable, NSError * _Nullable))completion __attribute__((deprecated("
+/* [Fix]Error CS1003: Syntax error
         Auth-related APIs don't refresh access tokens automatically.
         Make sure you don't need token refreshing as a side effect, then use methods in `LineSDKAuthAPI` instead.
         ", "LineSDKAuthAPI.verifyAccessToken")));
+*/
 		[Static]
 		[Export ("verifyAccessTokenWithCompletionHandler:")]
 		void VerifyAccessTokenWithCompletionHandler (Action<LineSDKAccessTokenVerifyResult, NSError> completion);
 
 		// +(void)verifyAccessToken:(NSString * _Nullable)token completionHandler:(void (^ _Nonnull)(LineSDKAccessTokenVerifyResult * _Nullable, NSError * _Nullable))completion __attribute__((deprecated("
+/* [Fix]Error CS1003: Syntax error
         Auth-related APIs don't refresh access tokens automatically.
         Make sure you don't need token refreshing as a side effect, then use methods in `LineSDKAuthAPI` instead.
         ", "LineSDKAuthAPI.verifyAccessToken")));
+*/
 		[Static]
 		[Export ("verifyAccessToken:completionHandler:")]
 		void VerifyAccessToken ([NullAllowed] string token, Action<LineSDKAccessTokenVerifyResult, NSError> completion);
 
 		// +(void)verifyAccessToken:(NSString * _Nullable)token callbackQueue:(LineSDKCallbackQueue * _Nonnull)queue completionHandler:(void (^ _Nonnull)(LineSDKAccessTokenVerifyResult * _Nullable, NSError * _Nullable))completion __attribute__((deprecated("
+/* [Fix]Error CS1003: Syntax error
         Auth-related APIs don't refresh access tokens automatically.
         Make sure you don't need token refreshing as a side effect, then use methods in `LineSDKAuthAPI` instead.
         ", "LineSDKAuthAPI.verifyAccessToken")));
+*/
 		[Static]
 		[Export ("verifyAccessToken:callbackQueue:completionHandler:")]
 		void VerifyAccessToken ([NullAllowed] string token, LineSDKCallbackQueue queue, Action<LineSDKAccessTokenVerifyResult, NSError> completion);
@@ -1547,9 +1563,11 @@ namespace LineSDKObjC
 		bool Application (UIApplication app, NSURL url, NSDictionary<NSString, NSObject> options);
 
 		// -(LineSDKLoginProcess * _Nullable)loginWithPermissions:(NSSet<LineSDKLoginPermission *> * _Nullable)permissions inViewController:(UIViewController * _Nullable)viewController options:(NSArray<LineSDKLoginManagerOptions *> * _Nullable)options completionHandler:(void (^ _Nonnull)(LineSDKLoginResult * _Nullable, NSError * _Nullable))completion __attribute__((deprecated("
+/* [Fix]Error CS1003: Syntax error
     Convert the `options` to a `LoginManager.Parameters` value and
     use `login(permissions:inViewController:parameters:completionHandler:)` instead.")
     ")));
+*/
 		[Export ("loginWithPermissions:inViewController:options:completionHandler:")]
 		[return: NullAllowed]
 		LineSDKLoginProcess LoginWithPermissions ([NullAllowed] NSSet<LineSDKLoginPermission> permissions, [NullAllowed] UIViewController viewController, [NullAllowed] LineSDKLoginManagerOptions[] options, Action<LineSDKLoginResult, NSError> completion);
