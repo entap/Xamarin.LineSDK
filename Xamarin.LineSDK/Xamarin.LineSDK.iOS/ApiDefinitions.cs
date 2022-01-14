@@ -384,7 +384,10 @@ namespace LineSDKObjC
 	{
 		// @property (readonly, copy, nonatomic) NSURL * _Nonnull originalContentURL;
 		[Export ("originalContentURL", ArgumentSemantic.Copy)]
-		NSURL OriginalContentURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL OriginalContentURL { get; }
+		NSUrl OriginalContentURL { get; }
 
 		// @property (readonly, nonatomic) NSTimeInterval duration;
 		[Export ("duration")]
@@ -393,7 +396,10 @@ namespace LineSDKObjC
 		// -(instancetype _Nullable)initWithOriginalContentURL:(NSURL * _Nonnull)originalContentURL duration:(NSTimeInterval)duration __attribute__((objc_designated_initializer));
 		[Export ("initWithOriginalContentURL:duration:")]
 		[DesignatedInitializer]
-		IntPtr Constructor (NSURL originalContentURL, double duration);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		IntPtr Constructor (NSURL originalContentURL, double duration);
+		IntPtr Constructor (NSUrl originalContentURL, double duration);
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
@@ -895,7 +901,10 @@ namespace LineSDKObjC
 	{
 		// @property (readonly, copy, nonatomic) NSURL * _Nonnull url;
 		[Export ("url", ArgumentSemantic.Copy)]
-		NSURL Url { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL Url { get; }
+		NSUrl Url { get; }
 
 		// @property (nonatomic) enum LineSDKFlexMessageComponentMargin margin;
 		[Export ("margin", ArgumentSemantic.Assign)]
@@ -912,7 +921,10 @@ namespace LineSDKObjC
 		// -(instancetype _Nullable)initWithIconURL:(NSURL * _Nonnull)iconURL __attribute__((objc_designated_initializer));
 		[Export ("initWithIconURL:")]
 		[DesignatedInitializer]
-		IntPtr Constructor (NSURL iconURL);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		IntPtr Constructor (NSURL iconURL);
+		IntPtr Constructor (NSUrl iconURL);
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
@@ -927,7 +939,10 @@ namespace LineSDKObjC
 	{
 		// @property (readonly, copy, nonatomic) NSURL * _Nonnull url;
 		[Export ("url", ArgumentSemantic.Copy)]
-		NSURL Url { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL Url { get; }
+		NSUrl Url { get; }
 
 		// @property (nonatomic, strong) NSNumber * _Nullable flex;
 		[NullAllowed, Export ("flex", ArgumentSemantic.Strong)]
@@ -964,7 +979,10 @@ namespace LineSDKObjC
 		// -(instancetype _Nullable)initWithImageURL:(NSURL * _Nonnull)imageURL __attribute__((objc_designated_initializer));
 		[Export ("initWithImageURL:")]
 		[DesignatedInitializer]
-		IntPtr Constructor (NSURL imageURL);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		IntPtr Constructor (NSURL imageURL);
+		IntPtr Constructor (NSUrl imageURL);
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
@@ -1210,11 +1228,17 @@ namespace LineSDKObjC
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nullable pictureURL;
 		[NullAllowed, Export ("pictureURL", ArgumentSemantic.Copy)]
-		NSURL PictureURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL PictureURL { get; }
+		NSUrl PictureURL { get; }
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nullable pictureURLSmall;
 		[NullAllowed, Export ("pictureURLSmall", ArgumentSemantic.Copy)]
-		NSURL PictureURLSmall { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL PictureURLSmall { get; }
+		NSUrl PictureURLSmall { get; }
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
@@ -1247,7 +1271,10 @@ namespace LineSDKObjC
 		// @required @property (readonly, copy, nonatomic) NSURL * _Nullable avatarURL;
 		[Abstract]
 		[NullAllowed, Export ("avatarURL", ArgumentSemantic.Copy)]
-		NSURL AvatarURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL AvatarURL { get; }
+		NSUrl AvatarURL { get; }
 	}
 
 	// @interface LineSDKObjC_Swift_836 (LineSDKGroup) <LineSDKShareTarget>
@@ -1265,7 +1292,10 @@ namespace LineSDKObjC
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nullable avatarURL;
 		[NullAllowed, Export ("avatarURL", ArgumentSemantic.Copy)]
-		NSURL AvatarURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL AvatarURL { get; }
+		NSUrl AvatarURL { get; }
 	}
 
 	// @interface LineSDKHexColor : NSObject
@@ -1308,11 +1338,17 @@ namespace LineSDKObjC
 	{
 		// @property (readonly, copy, nonatomic) NSURL * _Nonnull originalContentURL;
 		[Export ("originalContentURL", ArgumentSemantic.Copy)]
-		NSURL OriginalContentURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL OriginalContentURL { get; }
+		NSUrl OriginalContentURL { get; }
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nonnull previewImageURL;
 		[Export ("previewImageURL", ArgumentSemantic.Copy)]
-		NSURL PreviewImageURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL PreviewImageURL { get; }
+		NSUrl PreviewImageURL { get; }
 
 		// @property (nonatomic) BOOL animated;
 		[Export ("animated")]
@@ -1328,12 +1364,18 @@ namespace LineSDKObjC
 
 		// -(instancetype _Nullable)initWithOriginalContentURL:(NSURL * _Nonnull)originalContentURL previewImageURL:(NSURL * _Nonnull)previewImageURL;
 		[Export ("initWithOriginalContentURL:previewImageURL:")]
-		IntPtr Constructor (NSURL originalContentURL, NSURL previewImageURL);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		IntPtr Constructor (NSURL originalContentURL, NSURL previewImageURL);
+		IntPtr Constructor (NSUrl originalContentURL, NSUrl previewImageURL);
 
 		// -(instancetype _Nullable)initWithOriginalContentURL:(NSURL * _Nonnull)originalContentURL previewImageURL:(NSURL * _Nonnull)previewImageURL animated:(BOOL)animated fileExtension:(NSString * _Nullable)fileExtension sender:(LineSDKMessageSender * _Nullable)sender __attribute__((objc_designated_initializer));
 		[Export ("initWithOriginalContentURL:previewImageURL:animated:fileExtension:sender:")]
 		[DesignatedInitializer]
-		IntPtr Constructor (NSURL originalContentURL, NSURL previewImageURL, bool animated, [NullAllowed] string fileExtension, [NullAllowed] LineSDKMessageSender sender);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		IntPtr Constructor (NSURL originalContentURL, NSURL previewImageURL, bool animated, [NullAllowed] string fileExtension, [NullAllowed] LineSDKMessageSender sender);
+		IntPtr Constructor (NSUrl originalContentURL, NSUrl previewImageURL, bool animated, [NullAllowed] string fileExtension, [NullAllowed] LineSDKMessageSender sender);
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
@@ -1397,7 +1439,10 @@ namespace LineSDKObjC
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nullable picture;
 		[NullAllowed, Export ("picture", ArgumentSemantic.Copy)]
-		NSURL Picture { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL Picture { get; }
+		NSUrl Picture { get; }
 
 		// @property (readonly, copy, nonatomic) NSString * _Nullable email;
 		[NullAllowed, Export ("email")]
@@ -1542,7 +1587,10 @@ namespace LineSDKObjC
 
 		// -(void)setupWithChannelID:(NSString * _Nonnull)channelID universalLinkURL:(NSURL * _Nullable)universalLinkURL;
 		[Export ("setupWithChannelID:universalLinkURL:")]
-		void SetupWithChannelID (string channelID, [NullAllowed] NSURL universalLinkURL);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		void SetupWithChannelID (string channelID, [NullAllowed] NSURL universalLinkURL);
+		void SetupWithChannelID (string channelID, [NullAllowed] NSUrl universalLinkURL);
 
 		// -(LineSDKLoginProcess * _Nullable)loginWithPermissions:(NSSet<LineSDKLoginPermission *> * _Nullable)permissions inViewController:(UIViewController * _Nullable)viewController completionHandler:(void (^ _Nonnull)(LineSDKLoginResult * _Nullable, NSError * _Nullable))completion;
 		[Export ("loginWithPermissions:inViewController:completionHandler:")]
@@ -1560,7 +1608,10 @@ namespace LineSDKObjC
 
 		// -(BOOL)application:(UIApplication * _Nonnull)app open:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> * _Nonnull)options __attribute__((warn_unused_result("")));
 		[Export ("application:open:options:")]
-		bool Application (UIApplication app, NSURL url, NSDictionary<NSString, NSObject> options);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		bool Application (UIApplication app, NSURL url, NSDictionary<NSString, NSObject> options);
+		bool Application (UIApplication app, NSUrl url, NSDictionary<NSString, NSObject> options);
 
 		// -(LineSDKLoginProcess * _Nullable)loginWithPermissions:(NSSet<LineSDKLoginPermission *> * _Nullable)permissions inViewController:(UIViewController * _Nullable)viewController options:(NSArray<LineSDKLoginManagerOptions *> * _Nullable)options completionHandler:(void (^ _Nonnull)(LineSDKLoginResult * _Nullable, NSError * _Nullable))completion __attribute__((deprecated("
 /* [Fix]Error CS1003: Syntax error
@@ -1846,16 +1897,25 @@ namespace LineSDKObjC
 
 		// @property (copy, nonatomic) NSURL * _Nonnull iconURL;
 		[Export ("iconURL", ArgumentSemantic.Copy)]
-		NSURL IconURL { get; set; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL IconURL { get; set; }
+		NSUrl IconURL { get; set; }
 
 		// @property (copy, nonatomic) NSURL * _Nullable linkURL;
 		[NullAllowed, Export ("linkURL", ArgumentSemantic.Copy)]
-		NSURL LinkURL { get; set; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL LinkURL { get; set; }
+		NSUrl LinkURL { get; set; }
 
 		// -(instancetype _Nonnull)initWithLabel:(NSString * _Nonnull)label iconURL:(NSURL * _Nonnull)iconURL linkURL:(NSURL * _Nullable)linkURL __attribute__((objc_designated_initializer));
 		[Export ("initWithLabel:iconURL:linkURL:")]
 		[DesignatedInitializer]
-		IntPtr Constructor (string label, NSURL iconURL, [NullAllowed] NSURL linkURL);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		IntPtr Constructor (string label, NSURL iconURL, [NullAllowed] NSURL linkURL);
+		IntPtr Constructor (string label, NSUrl iconURL, [NullAllowed] NSUrl linkURL);
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
@@ -1922,12 +1982,18 @@ namespace LineSDKObjC
 
 		// @property (copy, nonatomic) NSURL * _Nonnull uri;
 		[Export ("uri", ArgumentSemantic.Copy)]
-		NSURL Uri { get; set; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL Uri { get; set; }
+		NSUrl Uri { get; set; }
 
 		// -(instancetype _Nonnull)initWithLabel:(NSString * _Nullable)label uri:(NSURL * _Nonnull)uri __attribute__((objc_designated_initializer));
 		[Export ("initWithLabel:uri:")]
 		[DesignatedInitializer]
-		IntPtr Constructor ([NullAllowed] string label, NSURL uri);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		IntPtr Constructor ([NullAllowed] string label, NSURL uri);
+		IntPtr Constructor ([NullAllowed] string label, NSUrl uri);
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
@@ -2036,7 +2102,10 @@ namespace LineSDKObjC
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nonnull url;
 		[Export ("url", ArgumentSemantic.Copy)]
-		NSURL Url { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL Url { get; }
+		NSUrl Url { get; }
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
@@ -2256,7 +2325,10 @@ namespace LineSDKObjC
 
 		// @property (copy, nonatomic) NSURL * _Nullable thumbnailImageURL;
 		[NullAllowed, Export ("thumbnailImageURL", ArgumentSemantic.Copy)]
-		NSURL ThumbnailImageURL { get; set; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL ThumbnailImageURL { get; set; }
+		NSUrl ThumbnailImageURL { get; set; }
 
 		// @property (nonatomic) enum LineSDKTemplateMessagePayloadImageAspectRatio imageAspectRatio;
 		[Export ("imageAspectRatio", ArgumentSemantic.Assign)]
@@ -2340,7 +2412,10 @@ namespace LineSDKObjC
 
 		// @property (copy, nonatomic) NSURL * _Nullable thumbnailImageURL;
 		[NullAllowed, Export ("thumbnailImageURL", ArgumentSemantic.Copy)]
-		NSURL ThumbnailImageURL { get; set; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL ThumbnailImageURL { get; set; }
+		NSUrl ThumbnailImageURL { get; set; }
 
 		// @property (nonatomic, strong) LineSDKHexColor * _Nullable imageBackgroundColor;
 		[NullAllowed, Export ("imageBackgroundColor", ArgumentSemantic.Strong)]
@@ -2420,7 +2495,10 @@ namespace LineSDKObjC
 	{
 		// @property (copy, nonatomic) NSURL * _Nonnull imageURL;
 		[Export ("imageURL", ArgumentSemantic.Copy)]
-		NSURL ImageURL { get; set; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL ImageURL { get; set; }
+		NSUrl ImageURL { get; set; }
 
 		// @property (nonatomic, strong) LineSDKMessageAction * _Nullable action;
 		[NullAllowed, Export ("action", ArgumentSemantic.Strong)]
@@ -2429,7 +2507,10 @@ namespace LineSDKObjC
 		// -(instancetype _Nullable)initWithImageURL:(NSURL * _Nonnull)imageURL action:(LineSDKMessageAction * _Nullable)action __attribute__((objc_designated_initializer));
 		[Export ("initWithImageURL:action:")]
 		[DesignatedInitializer]
-		IntPtr Constructor (NSURL imageURL, [NullAllowed] LineSDKMessageAction action);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		IntPtr Constructor (NSURL imageURL, [NullAllowed] LineSDKMessageAction action);
+		IntPtr Constructor (NSUrl imageURL, [NullAllowed] LineSDKMessageAction action);
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
@@ -2512,11 +2593,17 @@ namespace LineSDKObjC
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nullable pictureURL;
 		[NullAllowed, Export ("pictureURL", ArgumentSemantic.Copy)]
-		NSURL PictureURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL PictureURL { get; }
+		NSUrl PictureURL { get; }
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nullable pictureURLSmall;
 		[NullAllowed, Export ("pictureURLSmall", ArgumentSemantic.Copy)]
-		NSURL PictureURLSmall { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL PictureURLSmall { get; }
+		NSUrl PictureURLSmall { get; }
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
@@ -2535,7 +2622,10 @@ namespace LineSDKObjC
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nullable avatarURL;
 		[NullAllowed, Export ("avatarURL", ArgumentSemantic.Copy)]
-		NSURL AvatarURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL AvatarURL { get; }
+		NSUrl AvatarURL { get; }
 	}
 
 	// @interface LineSDKUserProfile : NSObject
@@ -2553,15 +2643,24 @@ namespace LineSDKObjC
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nullable pictureURL;
 		[NullAllowed, Export ("pictureURL", ArgumentSemantic.Copy)]
-		NSURL PictureURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL PictureURL { get; }
+		NSUrl PictureURL { get; }
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nullable pictureURLLarge;
 		[NullAllowed, Export ("pictureURLLarge", ArgumentSemantic.Copy)]
-		NSURL PictureURLLarge { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL PictureURLLarge { get; }
+		NSUrl PictureURLLarge { get; }
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nullable pictureURLSmall;
 		[NullAllowed, Export ("pictureURLSmall", ArgumentSemantic.Copy)]
-		NSURL PictureURLSmall { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL PictureURLSmall { get; }
+		NSUrl PictureURLSmall { get; }
 
 		// @property (readonly, copy, nonatomic) NSString * _Nullable statusMessage;
 		[NullAllowed, Export ("statusMessage")]
@@ -2584,16 +2683,25 @@ namespace LineSDKObjC
 	{
 		// @property (readonly, copy, nonatomic) NSURL * _Nonnull originalContentURL;
 		[Export ("originalContentURL", ArgumentSemantic.Copy)]
-		NSURL OriginalContentURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL OriginalContentURL { get; }
+		NSUrl OriginalContentURL { get; }
 
 		// @property (readonly, copy, nonatomic) NSURL * _Nonnull previewImageURL;
 		[Export ("previewImageURL", ArgumentSemantic.Copy)]
-		NSURL PreviewImageURL { get; }
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		NSURL PreviewImageURL { get; }
+		NSUrl PreviewImageURL { get; }
 
 		// -(instancetype _Nullable)initWithOriginalContentURL:(NSURL * _Nonnull)originalContentURL previewImageURL:(NSURL * _Nonnull)previewImageURL __attribute__((objc_designated_initializer));
 		[Export ("initWithOriginalContentURL:previewImageURL:")]
 		[DesignatedInitializer]
-		IntPtr Constructor (NSURL originalContentURL, NSURL previewImageURL);
+// Fixed
+// Error CS0246: The type or namespace name 'NSURL' could not be found
+//		IntPtr Constructor (NSURL originalContentURL, NSURL previewImageURL);
+		IntPtr Constructor (NSUrl originalContentURL, NSUrl previewImageURL);
 
 		// +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
 		[Static]
