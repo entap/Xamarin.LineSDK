@@ -1492,7 +1492,10 @@ namespace LineSDKObjC
 
 	// @interface LineSDKLoginButton : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC18LineSDKLoginButton")]
-	interface LineSDKLoginButton
+// Fixed
+// Error CS0311: The type [type] cannot be used as type parameter 'TKey' in the generic type or method 'NSSet<TKey>'. There is no implicit reference conversion from [type] to 'ObjCRuntime.INativeObject'.
+//	interface LineSDKLoginButton
+	interface LineSDKLoginButton : INativeObject
 	{
 		// @property (readonly, nonatomic, strong) UIButton * _Nonnull button;
 		[Export ("button", ArgumentSemantic.Strong)]
@@ -1558,7 +1561,10 @@ namespace LineSDKObjC
 	// @interface LineSDKLoginManager : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC19LineSDKLoginManager")]
 	[DisableDefaultCtor]
-	interface LineSDKLoginManager
+// Fixed
+// Error CS0311: The type [type] cannot be used as type parameter 'TKey' in the generic type or method 'NSSet<TKey>'. There is no implicit reference conversion from [type] to 'ObjCRuntime.INativeObject'.
+//	interface LineSDKLoginManager
+	interface LineSDKLoginManager : INativeObject
 	{
 		// @property (readonly, nonatomic, strong, class) LineSDKLoginManager * _Nonnull sharedManager;
 		[Static]
@@ -1709,7 +1715,10 @@ namespace LineSDKObjC
 	// @interface LineSDKLoginPermission : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC22LineSDKLoginPermission")]
 	[DisableDefaultCtor]
-	interface LineSDKLoginPermission
+// Fixed
+// Error CS0311: The type [type] cannot be used as type parameter 'TKey' in the generic type or method 'NSSet<TKey>'. There is no implicit reference conversion from [type] to 'ObjCRuntime.INativeObject'.
+//	interface LineSDKLoginPermission
+	interface LineSDKLoginPermission : INativeObject
 	{
 		// -(instancetype _Nonnull)initWithRawValue:(NSString * _Nonnull)rawValue __attribute__((objc_designated_initializer));
 		[Export ("initWithRawValue:")]
@@ -1845,7 +1854,10 @@ namespace LineSDKObjC
 	// @interface LineSDKLoginResult : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC18LineSDKLoginResult")]
 	[DisableDefaultCtor]
-	interface LineSDKLoginResult
+// Fixed
+// Error CS0311: The type [type] cannot be used as type parameter 'TKey' in the generic type or method 'NSSet<TKey>'. There is no implicit reference conversion from [type] to 'ObjCRuntime.INativeObject'.
+//	interface LineSDKLoginResult
+	interface LineSDKLoginResult : INativeObject
 	{
 		// @property (readonly, nonatomic, strong) LineSDKAccessToken * _Nonnull accessToken;
 		[Export ("accessToken", ArgumentSemantic.Strong)]
