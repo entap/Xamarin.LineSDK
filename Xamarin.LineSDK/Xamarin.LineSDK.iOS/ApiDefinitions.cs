@@ -1958,7 +1958,9 @@ namespace LineSDKObjC
 		// +(LineSDKAuthorizationStatus * _Nonnull)localAuthorizationStatusForCreatingOpenChat __attribute__((warn_unused_result("")));
 		[Static]
 		[Export ("localAuthorizationStatusForCreatingOpenChat")]
-		[Verify (MethodToProperty)]
+// Fixed
+// Error CS0246: The type or namespace name 'VerifyAttribute', 'Verify' could not be found
+//		[Verify (MethodToProperty)]
 		LineSDKAuthorizationStatus LocalAuthorizationStatusForCreatingOpenChat { get; }
 	}
 
@@ -2175,7 +2177,9 @@ namespace LineSDKObjC
 		// +(LineSDKAuthorizationStatus * _Nonnull)localAuthorizationStatusForSendingMessage __attribute__((warn_unused_result("")));
 		[Static]
 		[Export ("localAuthorizationStatusForSendingMessage")]
-		[Verify (MethodToProperty)]
+// Fixed
+// Error CS0246: The type or namespace name 'VerifyAttribute', 'Verify' could not be found
+//		[Verify (MethodToProperty)]
 		LineSDKAuthorizationStatus LocalAuthorizationStatusForSendingMessage { get; }
 	}
 
