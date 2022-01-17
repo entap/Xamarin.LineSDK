@@ -9,6 +9,9 @@ namespace LineSDKObjC
 {
 	// @interface LineSDKAPI : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC10LineSDKAPI")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKAPI
 	{
 		// +(void)getProfileWithCompletionHandler:(void (^ _Nonnull)(LineSDKUserProfile * _Nullable, NSError * _Nullable))completion;
@@ -245,6 +248,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKAPIError : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC15LineSDKAPIError")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKAPIError
 	{
@@ -264,6 +270,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKAccessToken : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC18LineSDKAccessToken")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKAccessToken
 	{
@@ -299,6 +308,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKAccessTokenStore : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC23LineSDKAccessTokenStore")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKAccessTokenStore
 	{
@@ -319,6 +331,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKAccessTokenVerifyResult : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC30LineSDKAccessTokenVerifyResult")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKAccessTokenVerifyResult
 	{
@@ -346,6 +361,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKMessage : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC14LineSDKMessage")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKMessage
 	{
 		// @property (readonly, nonatomic, strong) LineSDKTextMessage * _Nullable textMessage;
@@ -379,6 +397,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKAudioMessage : LineSDKMessage
 	[BaseType (typeof(LineSDKMessage), Name = "_TtC11LineSDKObjC19LineSDKAudioMessage")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKAudioMessage
 	{
@@ -409,6 +430,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKAuthAPI : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC14LineSDKAuthAPI")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKAuthAPI
 	{
 		// +(void)refreshAccessTokenWithCompletionHandler:(void (^ _Nonnull)(LineSDKAccessToken * _Nullable, NSError * _Nullable))completion;
@@ -469,6 +493,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKAuthorizationStatus : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC26LineSDKAuthorizationStatus")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKAuthorizationStatus
 	{
@@ -504,6 +531,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKCallbackQueue : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC20LineSDKCallbackQueue")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKCallbackQueue
 	{
@@ -540,6 +570,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKConstant : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC15LineSDKConstant")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKConstant
 	{
 		// @property (readonly, copy, nonatomic, class) NSString * _Nonnull SDKVersion;
@@ -550,6 +583,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKErrorConstant : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC20LineSDKErrorConstant")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKErrorConstant
 	{
 		// @property (readonly, copy, nonatomic, class) NSString * _Nonnull errorDomain;
@@ -650,6 +686,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexBlockStyle : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC21LineSDKFlexBlockStyle")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKFlexBlockStyle
 	{
@@ -678,6 +717,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexMessageComponent : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC27LineSDKFlexMessageComponent")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKFlexMessageComponent
 	{
 		// @property (readonly, nonatomic, strong) LineSDKFlexBoxComponent * _Nullable boxComponent;
@@ -715,6 +757,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexBoxComponent : LineSDKFlexMessageComponent
 	[BaseType (typeof(LineSDKFlexMessageComponent), Name = "_TtC11LineSDKObjC23LineSDKFlexBoxComponent")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKFlexBoxComponent
 	{
@@ -759,6 +804,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexMessageContainer : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC27LineSDKFlexMessageContainer")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKFlexMessageContainer
 	{
 		// @property (readonly, nonatomic, strong) LineSDKFlexBubbleContainer * _Nullable bubbleContainer;
@@ -772,6 +820,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexBubbleContainer : LineSDKFlexMessageContainer
 	[BaseType (typeof(LineSDKFlexMessageContainer), Name = "_TtC11LineSDKObjC26LineSDKFlexBubbleContainer")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKFlexBubbleContainer
 	{
 		// @property (nonatomic, strong) LineSDKFlexBoxComponent * _Nullable header;
@@ -801,6 +852,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexBubbleContainerStyle : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC31LineSDKFlexBubbleContainerStyle")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKFlexBubbleContainerStyle
 	{
 		// @property (nonatomic, strong) LineSDKFlexBlockStyle * _Nullable header;
@@ -822,6 +876,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexButtonComponent : LineSDKFlexMessageComponent
 	[BaseType (typeof(LineSDKFlexMessageComponent), Name = "_TtC11LineSDKObjC26LineSDKFlexButtonComponent")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKFlexButtonComponent
 	{
@@ -866,6 +923,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexCarouselContainer : LineSDKFlexMessageContainer
 	[BaseType (typeof(LineSDKFlexMessageContainer), Name = "_TtC11LineSDKObjC28LineSDKFlexCarouselContainer")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKFlexCarouselContainer
 	{
@@ -890,12 +950,18 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexFillerComponent : LineSDKFlexMessageComponent
 	[BaseType (typeof(LineSDKFlexMessageComponent), Name = "_TtC11LineSDKObjC26LineSDKFlexFillerComponent")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKFlexFillerComponent
 	{
 	}
 
 	// @interface LineSDKFlexIconComponent : LineSDKFlexMessageComponent
 	[BaseType (typeof(LineSDKFlexMessageComponent), Name = "_TtC11LineSDKObjC24LineSDKFlexIconComponent")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKFlexIconComponent
 	{
@@ -934,6 +1000,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexImageComponent : LineSDKFlexMessageComponent
 	[BaseType (typeof(LineSDKFlexMessageComponent), Name = "_TtC11LineSDKObjC25LineSDKFlexImageComponent")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKFlexImageComponent
 	{
@@ -992,6 +1061,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexMessage : LineSDKMessage
 	[BaseType (typeof(LineSDKMessage), Name = "_TtC11LineSDKObjC18LineSDKFlexMessage")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKFlexMessage
 	{
@@ -1016,6 +1088,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexSeparatorComponent : LineSDKFlexMessageComponent
 	[BaseType (typeof(LineSDKFlexMessageComponent), Name = "_TtC11LineSDKObjC29LineSDKFlexSeparatorComponent")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKFlexSeparatorComponent
 	{
@@ -1040,6 +1115,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexSpacerComponent : LineSDKFlexMessageComponent
 	[BaseType (typeof(LineSDKFlexMessageComponent), Name = "_TtC11LineSDKObjC26LineSDKFlexSpacerComponent")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKFlexSpacerComponent
 	{
@@ -1060,6 +1138,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKFlexTextComponent : LineSDKFlexMessageComponent
 	[BaseType (typeof(LineSDKFlexMessageComponent), Name = "_TtC11LineSDKObjC24LineSDKFlexTextComponent")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKFlexTextComponent
 	{
@@ -1120,6 +1201,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKGetApproversInFriendsResponse : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC36LineSDKGetApproversInFriendsResponse")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKGetApproversInFriendsResponse
 	{
@@ -1139,6 +1223,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKGetApproversInGroupResponse : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC34LineSDKGetApproversInGroupResponse")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKGetApproversInGroupResponse
 	{
@@ -1158,6 +1245,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKGetBotFriendshipStatusResponse : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC37LineSDKGetBotFriendshipStatusResponse")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKGetBotFriendshipStatusResponse
 	{
@@ -1177,6 +1267,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKGetFriendsResponse : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC25LineSDKGetFriendsResponse")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKGetFriendsResponse
 	{
@@ -1196,6 +1289,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKGetGroupsResponse : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC24LineSDKGetGroupsResponse")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKGetGroupsResponse
 	{
@@ -1215,6 +1311,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKGroup : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC12LineSDKGroup")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKGroup
 	{
@@ -1286,6 +1385,9 @@ namespace LineSDKObjC
 //	[Category]
 	[BaseType (typeof(LineSDKGroup))]
 // Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
+// Fixed
 // Error CS0246: The type or namespace name 'ILineSDKShareTarget' could not be found
 //	interface LineSDKGroup_LineSDKObjC_Swift_836 : ILineSDKShareTarget
 	interface LineSDKGroup_LineSDKObjC_Swift_836 : LineSDKShareTarget
@@ -1308,6 +1410,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKHexColor : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC15LineSDKHexColor")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKHexColor
 	{
@@ -1341,6 +1446,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKImageMessage : LineSDKMessage
 	[BaseType (typeof(LineSDKMessage), Name = "_TtC11LineSDKObjC19LineSDKImageMessage")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKImageMessage
 	{
@@ -1393,6 +1501,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKJWT : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC10LineSDKJWT")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKJWT
 	{
@@ -1408,6 +1519,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKJWTPayload : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC17LineSDKJWTPayload")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKJWTPayload
 	{
@@ -1468,6 +1582,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKLocationMessage : LineSDKMessage
 	[BaseType (typeof(LineSDKMessage), Name = "_TtC11LineSDKObjC22LineSDKLocationMessage")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKLocationMessage
 	{
@@ -1501,8 +1618,11 @@ namespace LineSDKObjC
 	// @interface LineSDKLoginButton : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC18LineSDKLoginButton")]
 // Fixed
-// Error CS0311: The type [type] cannot be used as type parameter 'TKey' in the generic type or method 'NSSet<TKey>'. There is no implicit reference conversion from [type] to 'ObjCRuntime.INativeObject'.
-//	interface LineSDKLoginButton
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
+	// Fixed
+	// Error CS0311: The type [type] cannot be used as type parameter 'TKey' in the generic type or method 'NSSet<TKey>'. There is no implicit reference conversion from [type] to 'ObjCRuntime.INativeObject'.
+	//	interface LineSDKLoginButton
 	interface LineSDKLoginButton : INativeObject
 	{
 		// @property (readonly, nonatomic, strong) UIButton * _Nonnull button;
@@ -1571,6 +1691,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKLoginManager : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC19LineSDKLoginManager")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 // Fixed
 // Error CS0311: The type [type] cannot be used as type parameter 'TKey' in the generic type or method 'NSSet<TKey>'. There is no implicit reference conversion from [type] to 'ObjCRuntime.INativeObject'.
@@ -1648,6 +1771,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKLoginManagerBotPrompt : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC28LineSDKLoginManagerBotPrompt")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKLoginManagerBotPrompt
 	{
@@ -1673,6 +1799,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKLoginManagerOptions : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC26LineSDKLoginManagerOptions")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKLoginManagerOptions
 	{
@@ -1704,6 +1833,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKLoginManagerParameters : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC29LineSDKLoginManagerParameters")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKLoginManagerParameters
 	{
 		// @property (nonatomic) BOOL onlyWebLogin;
@@ -1725,6 +1857,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKLoginPermission : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC22LineSDKLoginPermission")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 // Fixed
 // Error CS0311: The type [type] cannot be used as type parameter 'TKey' in the generic type or method 'NSSet<TKey>'. There is no implicit reference conversion from [type] to 'ObjCRuntime.INativeObject'.
@@ -1849,6 +1984,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKLoginProcess : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC19LineSDKLoginProcess")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKLoginProcess
 	{
@@ -1864,6 +2002,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKLoginResult : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC18LineSDKLoginResult")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 // Fixed
 // Error CS0311: The type [type] cannot be used as type parameter 'TKey' in the generic type or method 'NSSet<TKey>'. There is no implicit reference conversion from [type] to 'ObjCRuntime.INativeObject'.
@@ -1902,6 +2043,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKMessageAction : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC20LineSDKMessageAction")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKMessageAction
 	{
 		// @property (readonly, nonatomic, strong) LineSDKMessageURIAction * _Nullable URIAction;
@@ -1911,6 +2055,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKMessageSender : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC20LineSDKMessageSender")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKMessageSender
 	{
@@ -1948,6 +2095,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKMessageSendingStatus : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC27LineSDKMessageSendingStatus")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKMessageSendingStatus
 	{
@@ -1977,6 +2127,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKMessageSendingToken : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC26LineSDKMessageSendingToken")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKMessageSendingToken
 	{
@@ -1996,6 +2149,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKMessageURIAction : LineSDKMessageAction
 	[BaseType (typeof(LineSDKMessageAction), Name = "_TtC11LineSDKObjC23LineSDKMessageURIAction")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKMessageURIAction
 	{
@@ -2026,6 +2182,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKOpenChatCreatingController : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC33LineSDKOpenChatCreatingController")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKOpenChatCreatingController
 	{
 		[Wrap ("WeakDelegate")]
@@ -2083,6 +2242,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKOpenChatRoomCreatingItem : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC31LineSDKOpenChatRoomCreatingItem")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKOpenChatRoomCreatingItem
 	{
@@ -2119,6 +2281,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKOpenChatRoomInfo : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC23LineSDKOpenChatRoomInfo")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKOpenChatRoomInfo
 	{
@@ -2141,6 +2306,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKOpenChatRoomJoinType : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC27LineSDKOpenChatRoomJoinType")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKOpenChatRoomJoinType
 	{
@@ -2156,6 +2324,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKOpenChatRoomMembershipState : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC34LineSDKOpenChatRoomMembershipState")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKOpenChatRoomMembershipState
 	{
@@ -2171,6 +2342,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKOpenChatRoomStatus : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC25LineSDKOpenChatRoomStatus")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKOpenChatRoomStatus
 	{
@@ -2190,6 +2364,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKPostMultisendMessagesResponse : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC36LineSDKPostMultisendMessagesResponse")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKPostMultisendMessagesResponse
 	{
@@ -2205,6 +2382,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKPostMultisendMessagesResponseSendingResult : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC49LineSDKPostMultisendMessagesResponseSendingResult")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKPostMultisendMessagesResponseSendingResult
 	{
@@ -2224,6 +2404,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKPostSendMessagesResponse : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC31LineSDKPostSendMessagesResponse")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKPostSendMessagesResponse
 	{
@@ -2239,6 +2422,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKShareViewController : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC26LineSDKShareViewController")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKShareViewController
 	{
 		// @property (readonly, nonatomic, strong) UIViewController * _Nonnull viewController;
@@ -2312,6 +2498,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKTemplateMessagePayload : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC29LineSDKTemplateMessagePayload")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	interface LineSDKTemplateMessagePayload
 	{
 		// @property (readonly, nonatomic, strong) LineSDKTemplateButtonsPayload * _Nullable buttonsPayload;
@@ -2333,6 +2522,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKTemplateButtonsPayload : LineSDKTemplateMessagePayload
 	[BaseType (typeof(LineSDKTemplateMessagePayload), Name = "_TtC11LineSDKObjC29LineSDKTemplateButtonsPayload")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKTemplateButtonsPayload
 	{
@@ -2388,6 +2580,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKTemplateCarouselPayload : LineSDKTemplateMessagePayload
 	[BaseType (typeof(LineSDKTemplateMessagePayload), Name = "_TtC11LineSDKObjC30LineSDKTemplateCarouselPayload")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKTemplateCarouselPayload
 	{
@@ -2420,6 +2615,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKTemplateCarouselPayloadColumn : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC36LineSDKTemplateCarouselPayloadColumn")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKTemplateCarouselPayloadColumn
 	{
@@ -2467,6 +2665,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKTemplateConfirmPayload : LineSDKTemplateMessagePayload
 	[BaseType (typeof(LineSDKTemplateMessagePayload), Name = "_TtC11LineSDKObjC29LineSDKTemplateConfirmPayload")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKTemplateConfirmPayload
 	{
@@ -2495,6 +2696,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKTemplateImageCarouselPayload : LineSDKTemplateMessagePayload
 	[BaseType (typeof(LineSDKTemplateMessagePayload), Name = "_TtC11LineSDKObjC35LineSDKTemplateImageCarouselPayload")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKTemplateImageCarouselPayload
 	{
@@ -2519,6 +2723,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKTemplateImageCarouselPayloadColumn : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC41LineSDKTemplateImageCarouselPayloadColumn")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKTemplateImageCarouselPayloadColumn
 	{
@@ -2549,6 +2756,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKTemplateMessage : LineSDKMessage
 	[BaseType (typeof(LineSDKMessage), Name = "_TtC11LineSDKObjC22LineSDKTemplateMessage")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKTemplateMessage
 	{
@@ -2573,6 +2783,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKTextMessage : LineSDKMessage
 	[BaseType (typeof(LineSDKMessage), Name = "_TtC11LineSDKObjC18LineSDKTextMessage")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKTextMessage
 	{
@@ -2601,6 +2814,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKUser : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC11LineSDKUser")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKUser
 	{
@@ -2646,6 +2862,9 @@ namespace LineSDKObjC
 //	[Category]
 	[BaseType (typeof(LineSDKUser))]
 // Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
+// Fixed
 // Error CS0246: The type or namespace name 'ILineSDKShareTarget' could not be found
 //	interface LineSDKUser_LineSDKObjC_Swift_1397 : ILineSDKShareTarget
 	interface LineSDKUser_LineSDKObjC_Swift_1397 : LineSDKShareTarget
@@ -2664,6 +2883,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKUserProfile : NSObject
 	[BaseType (typeof(NSObject), Name = "_TtC11LineSDKObjC18LineSDKUserProfile")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKUserProfile
 	{
@@ -2712,6 +2934,9 @@ namespace LineSDKObjC
 
 	// @interface LineSDKVideoMessage : LineSDKMessage
 	[BaseType (typeof(LineSDKMessage), Name = "_TtC11LineSDKObjC19LineSDKVideoMessage")]
+// Fixed
+// Error MT5211: Native linking failed, undefined Objective-C class: [Type]. The symbol '_OBJC_CLASS_$[Type]' could not be found in any of the libraries or frameworks linked with your application.
+	[Protocol]
 	[DisableDefaultCtor]
 	interface LineSDKVideoMessage
 	{
