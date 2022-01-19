@@ -79,6 +79,8 @@
     <EmbeddedReferenceJar Include="Jars\jjwt-api-0.11.1.jar" />
     <EmbeddedReferenceJar Include="Jars\jjwt-impl-0.11.1.jar" />
     <EmbeddedReferenceJar Include="Jars\jjwt-orgjson-0.11.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\prov-1.58.0.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\core-1.58.0.0.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
