@@ -1,5 +1,22 @@
 # Xamarin.LineSDK
+[LINE SDK for Android](https://developers.line.biz/ja/docs/android-sdk/), [LINE SDK for iOS](https://developers.line.biz/ja/docs/ios-sdk/) のバインディングライブラリです。  
 
+## Xamarin.LineSDK.Android
+### 補足説明
+* [依存ライブラリ](https://github.com/line/line-sdk-android/blob/master/line-sdk/build.gradle)は、Loginに使用するもののみパッケージに含めています。  
+不足分については、「EmbeddedReferenceJar」として追加する必要があります。
+＊ 組み込みプロジェクトで以下のようなビルドエラーが発生時はAndroidManifest.xmlのapplicationにtools:replace="android:allowBackup"を指定してください
+> /Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets(3,3): Error AMM0000: 	Suggestion: add 'tools:replace="android:allowBackup"' to <application> element at AndroidManifest.xml to override. (AMM0000)
+
+対応例:  
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" >
+	<application android:label="app_name" android:theme="@style/MainTheme" tools:replace="android:allowBackup">
+</manifest>
+```
+  
+  
 ## Xamarin.LineSDK.iOS
 ### Binding手順
 * [line-sdk-ios-swift](https://github.com/line/line-sdk-ios-swift/releases)から 「Source code」 をダウンロードする  
