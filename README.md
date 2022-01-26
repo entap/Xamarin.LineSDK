@@ -24,7 +24,32 @@
 * 生成された[LineSDK.framework], [LineSDKObjC.framework]をXamarin.LineSDK.iOS/Frameworksに追加する  
 * 生成された[ApiDefinitions], [StructsAndEnums.cs]でXamarin.LineSDK.iOSのファイルを更新する  
 
+### Binding補足説明
+公式の[Binding手順](https://docs.microsoft.com/ja-jp/xamarin/ios/platform/binding-swift/walkthrough)に沿って説明*
+* [ネイティブ ライブラリをビルドする](https://docs.microsoft.com/ja-jp/xamarin/ios/platform/binding-swift/walkthrough#build-a-native-library)について  
+  * No.1~6, 8~10は[Objective-Cラッパー](https://developers.line.biz/ja/docs/ios-sdk/swift/using-objc/#use-wrapper)が用意されており、それを利用できるため作業不要  
+　https://github.com/line/line-sdk-ios-swift/tree/master/LineSDK/LineSDKObjC
+  * No.7, 11, 12は、[binding_swift_library.sh](/Scripts/binding_swift_library.sh)で行っています。  
+* [メタデータを準備する](https://docs.microsoft.com/ja-jp/xamarin/ios/platform/binding-swift/walkthrough#prepare-metadata)  
+ * [binding_swift_library.sh](/Scripts/binding_swift_library.sh)で行っています。  
+* 以降は割愛  
+
 ### 補足説明
- * 以下の理由により、LINEから提供されているソースコードからFat Frameworkを生成しています。
-   * .xcframeworkでは、ライブラリでPlatform(iPhone/iPhonesimulator)毎に読み込むFramworkの指定ができない。
-   * BitCodeの無効化や、iPhoneシミュレータ用ライブラリから arm64 等、追加の設定が必要。
+* 以下の理由により、LINEから提供されているソースコードからFat Frameworkを生成しています。
+  * .xcframeworkでは、ライブラリでPlatform(iPhone/iPhonesimulator)毎に読み込むFramworkの指定ができない。  
+※ライブラリ化せずにプロジェクト参照する場合は、.xcframeworkのままでも読み込みが可能です。
+```xml
+<ItemGroup Condition=" '$(Platform)' == 'iPhone' ">
+  <NativeReference Include="Frameworks\LineSDK.xcframework\ios-arm64_armv7\LineSDK.framework">
+    <Kind>Framework</Kind>
+    <SmartLink>True</SmartLink>
+  </NativeReference>
+ </ItemGroup>
+ <ItemGroup Condition=" '$(Platform)' == 'iPhoneSimulator' ">
+  <NativeReference Include="Frameworks\LineSDK.xcframework\ios-arm64_i386_x86_64-simulator\LineSDK.framework">
+    <Kind>Framework</Kind>
+    <SmartLink>True</SmartLink>
+  </NativeReference>
+</ItemGroup>
+```  
+  * BitCodeの無効化や、iPhoneシミュレータ用ライブラリから arm64 等、追加の設定が必要。
