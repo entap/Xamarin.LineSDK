@@ -18,6 +18,8 @@
   
   
 ## Xamarin.LineSDK.iOS
+FrameworkはiOS 15.2でビルドしています。
+	
 ### Binding手順
 * [line-sdk-ios-swift](https://github.com/line/line-sdk-ios-swift/releases)から 「Source code」 をダウンロードする  
 * [binding_swift_library.sh](/Scripts/binding_swift_library.sh)を開き、IOS_SDK_VERSION, SWIFT_SOURCE_DIR, OUTPUT_PATHを設定して実行する  
