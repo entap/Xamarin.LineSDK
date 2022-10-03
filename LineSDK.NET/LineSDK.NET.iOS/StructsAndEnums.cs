@@ -1,0 +1,4 @@
+namespace LineSDK.NET.iOS
+{
+
+}
