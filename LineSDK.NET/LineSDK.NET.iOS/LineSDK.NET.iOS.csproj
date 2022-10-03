@@ -4,6 +4,15 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <IsBindingProject>true</IsBindingProject>
+
+    <AssemblyName>LineSDK.NET.iOS</AssemblyName>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <PackageId>LineSDK.NET.iOS</PackageId>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>Entap</Authors>
+    <PackageProjectUrl>https://github.com/entap/Xamarin.LineSDK/tree/main/Xamarin.LineSDK/Xamarin.LineSDK.iOS</PackageProjectUrl>
+    <Description>LINE SDK for iOS Swiftのバインディングライブラリ</Description>
+    <PackageReleaseNotes>Xamarin.LineSDK.iOSから移植:LINE SDK for iOS(Ver 5.8.1)</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
