@@ -10,4 +10,16 @@
     <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
+
+   <ItemGroup>
+     <NativeReference Include="Frameworks\LineSDK.framework">
+       <Kind>Framework</Kind>
+       <SmartLink>True</SmartLink>
+     </NativeReference>
+     <NativeReference Include="Frameworks\LineSDKObjC.framework">
+       <Kind>Framework</Kind>
+       <SmartLink>True</SmartLink>
+     </NativeReference>
+   </ItemGroup>
+
 </Project>
