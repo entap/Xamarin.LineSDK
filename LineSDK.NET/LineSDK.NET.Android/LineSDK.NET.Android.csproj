@@ -5,4 +5,24 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Xamarin.AndroidX.ConstraintLayout" />
+    <None Remove="Xamarin.Kotlin.StdLib" />
+    <None Remove="Xamarin.AndroidX.AppCompat" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.1.4.1" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.7.10" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\linesdk-5.7.1.aar" />
+    <AndroidLibrary Include="Jars\jjwt-impl-0.11.1.jar" Bind="false" />
+    <AndroidLibrary Include="Jars\jjwt-orgjson-0.11.1.jar" Bind="false" />
+    <AndroidLibrary Include="Jars\prov-1.58.0.0.jar" Bind="false" />
+    <AndroidLibrary Include="Jars\core-1.58.0.0.jar" Bind="false" />
+  </ItemGroup>
+
 </Project>
