@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <AssemblyName>LineSDK.NET.Android</AssemblyName>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <PackageId>LineSDK.NET.Android</PackageId>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>Entap</Authors>
+    <PackageProjectUrl>https://github.com/entap/Xamarin.LineSDK/tree/main/Xamarin.LineSDK/Xamarin.LineSDK.iOS</PackageProjectUrl>
+    <Description>LINE SDK for Androidのバインディングライブラリ</Description>
+    <PackageReleaseNotes>Xamarin.LineSDK.Androidから移植:LINE SDK for Android(Ver 5.7.1)</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Xamarin.AndroidX.ConstraintLayout" />
+    <None Remove="Xamarin.Kotlin.StdLib" />
+    <None Remove="Xamarin.AndroidX.AppCompat" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.1.4.1" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.7.10" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\linesdk-5.7.1.aar" />
+    <AndroidLibrary Include="Jars\jjwt-impl-0.11.1.jar" Bind="false" />
+    <AndroidLibrary Include="Jars\jjwt-orgjson-0.11.1.jar" Bind="false" />
+    <AndroidLibrary Include="Jars\prov-1.58.0.0.jar" Bind="false" />
+    <AndroidLibrary Include="Jars\core-1.58.0.0.jar" Bind="false" />
+  </ItemGroup>
+
+</Project>

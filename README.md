@@ -1,11 +1,12 @@
-# Xamarin.LineSDK
+# Xamarin.LineSDK / LineSDK.NET
 [LINE SDK for Android](https://developers.line.biz/ja/docs/android-sdk/), [LINE SDK for iOS](https://developers.line.biz/ja/docs/ios-sdk/) のバインディングライブラリです。  
+.NET6.0以降で利用時は、LineSDK.NET.Android / LineSDK.NET.iOSを使用してください。
 
-## Xamarin.LineSDK.Android
+## Xamarin.LineSDK.Android / LineSDK.NET.Android
 ### 補足説明
 * [依存ライブラリ](https://github.com/line/line-sdk-android/blob/master/line-sdk/build.gradle)は、Loginに使用するもののみパッケージに含めています。  
-不足分については、「EmbeddedReferenceJar」として追加する必要があります。
-＊ 組み込みプロジェクトで以下のようなビルドエラーが発生時はAndroidManifest.xmlのapplicationにtools:replace="android:allowBackup"を指定してください
+不足分については、「EmbeddedReferenceJar」として追加する必要があります。  
+＊ 組み込みプロジェクトで以下のようなビルドエラーが発生時はAndroidManifest.xmlのapplicationにtools:replace="android:allowBackup"を指定してください  
 > /Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets(3,3): Error AMM0000: 	Suggestion: add 'tools:replace="android:allowBackup"' to <application> element at AndroidManifest.xml to override. (AMM0000)
 
 対応例:  
@@ -17,7 +18,7 @@
 ```
   
   
-## Xamarin.LineSDK.iOS
+## Xamarin.LineSDK.iOS / LineSDK.NET.iOS
 FrameworkはiOS 15.2でビルドしています。
 	
 ### Binding手順
@@ -29,7 +30,7 @@ FrameworkはiOS 15.2でビルドしています。
 ### Binding補足説明
 公式の[Binding手順](https://docs.microsoft.com/ja-jp/xamarin/ios/platform/binding-swift/walkthrough)に沿って説明*
 * [ネイティブ ライブラリをビルドする](https://docs.microsoft.com/ja-jp/xamarin/ios/platform/binding-swift/walkthrough#build-a-native-library)について  
-  * No.1~6, 8~10は[Objective-Cラッパー](https://developers.line.biz/ja/docs/ios-sdk/swift/using-objc/#use-wrapper)が用意されており、それを利用できるため作業不要  
+  * No.1〜6, 8〜10は[Objective-Cラッパー](https://developers.line.biz/ja/docs/ios-sdk/swift/using-objc/#use-wrapper)が用意されており、それを利用できるため作業不要  
 　https://github.com/line/line-sdk-ios-swift/tree/master/LineSDK/LineSDKObjC
   * No.7, 11, 12は、[binding_swift_library.sh](/Scripts/binding_swift_library.sh)で行っています。  
 * [メタデータを準備する](https://docs.microsoft.com/ja-jp/xamarin/ios/platform/binding-swift/walkthrough#prepare-metadata)  

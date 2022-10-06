@@ -1,0 +1,20 @@
+﻿<metadata>
+
+<!--  Fixed Error CS0534: [Type] does not implement inherited abstract member 'AsyncTask.DoInBackground(params Object[]?)'
+Xamarin.LineSDK.Android/obj/Release/generated/src/Com.Linecorp.Linesdk.Dialog.Internal.GetTargetUserTask.cs(23,23): 
+-->
+    <attr
+        path="/api/package[@name='com.linecorp.linesdk.dialog.internal']/class[@name='GetTargetUserTask']"
+        name="extends">java.lang.Object</attr>
+    <attr
+        path="/api/package[@name='com.linecorp.linesdk.dialog.internal']/class[@name='SendMessageTask']"
+        name="extends">java.lang.Object</attr>
+
+    <!--EmbeddedReferenceJarを指定しても、C# バインドが生成されるためノード削除-->
+    <remove-node
+        path="/api/package[starts-with(@name, 'io.jsonwebtoken')]"
+    />
+    <remove-node
+        path="/api/package[starts-with(@name, 'org.spongycastl')]"
+    />
+</metadata>
