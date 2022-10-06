@@ -8,7 +8,7 @@
     <AssemblyName>LineSDK.NET.Android</AssemblyName>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <PackageId>LineSDK.NET.Android</PackageId>
-    <PackageVersion>0.0.1</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
     <Authors>Entap</Authors>
     <PackageProjectUrl>https://github.com/entap/Xamarin.LineSDK/tree/main/Xamarin.LineSDK/Xamarin.LineSDK.iOS</PackageProjectUrl>
     <Description>LINE SDK for Androidのバインディングライブラリ</Description>
